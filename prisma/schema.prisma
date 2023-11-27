@@ -17,3 +17,13 @@ model User {
   firstName String
   lastName String
 }
+
+model Bookmarks {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  title String
+  description String?
+  link String
+}
