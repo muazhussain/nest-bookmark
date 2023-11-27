@@ -8,4 +8,9 @@ services:
     environment:
       POSTGRES_USER: bookmark_api
       POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: bookmark_db
+      POSTGRES_DB: bookmark_db_dev
+    networks:
+      - bookmark
+      
+networks:
+  bookmark:
